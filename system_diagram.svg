@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="system_diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-global="true"
+     inkscape:zoom="1"
+     inkscape:cx="19.5"
+     inkscape:cy="738.5"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g26353"
+       transform="translate(117.78498,-63.5)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.84321px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14608"
+         x="-37.863441"
+         y="235.34741"
+         id="text8232"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.14608"
+           x="-37.863441"
+           y="235.34741"
+           id="tspan9170">USB Microphone</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.115783"
+         id="rect9512"
+         width="51.427513"
+         height="7.4391217"
+         x="-39.184143"
+         y="229.84937" />
+    </g>
+    <g
+       id="g28677"
+       transform="translate(13.283296,80.448128)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.281001"
+         id="rect23702"
+         width="49.952675"
+         height="9.915699"
+         x="65.293945"
+         y="28.624569" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.43823px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.160956"
+         x="66.705612"
+         y="35.769012"
+         id="text13332"><tspan
+           sodipodi:role="line"
+           id="tspan13330"
+           style="stroke-width:0.160956"
+           x="66.705612"
+           y="35.769012">PTZ Camera 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.160956"
+           x="66.705612"
+           y="43.816799"
+           id="tspan13864" /></text>
+    </g>
+    <g
+       id="g28689"
+       transform="translate(-44.994825,80.448128)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.281001"
+         id="rect23702-8"
+         width="49.952675"
+         height="9.915699"
+         x="123.75916"
+         y="53.600906" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.43823px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.160956"
+         x="125.17082"
+         y="60.74535"
+         id="text13332-0"><tspan
+           sodipodi:role="line"
+           id="tspan13330-83"
+           style="stroke-width:0.160956"
+           x="125.17082"
+           y="60.74535">Mouth Servo</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.160956"
+           x="125.17082"
+           y="68.793137"
+           id="tspan13864-7" /></text>
+    </g>
+    <g
+       id="g28683"
+       transform="translate(13.283296,81.383572)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.281001"
+         id="rect23702-1"
+         width="49.952675"
+         height="9.915699"
+         x="65.293945"
+         y="39.849888" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.43823px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.160956"
+         x="66.705612"
+         y="46.994331"
+         id="text13332-4"><tspan
+           sodipodi:role="line"
+           id="tspan13330-8"
+           style="stroke-width:0.160956"
+           x="66.705612"
+           y="46.994331">PTZ Camera 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.160956"
+           x="66.705612"
+           y="55.042118"
+           id="tspan13864-1" /></text>
+    </g>
+    <g
+       id="g26365"
+       transform="translate(-65.352083,-29.897916)">
+      <g
+         id="g28591"
+         transform="translate(-45.508333,-38.364583)">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.381565"
+           id="rect2202"
+           width="38.264038"
+           height="91.180679"
+           x="120.96487"
+           y="176.52737" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="127.52917"
+           y="203.46457"
+           id="text3218"><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="127.52917"
+             y="203.46457"
+             id="tspan3220">Raspi</tspan><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="127.52917"
+             y="216.6937"
+             id="tspan27757">3b+</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.281001"
+       d="M 48.368489,115.05953 H 78.577241"
+       id="path28724" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.91917px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0729793"
+       x="60.131084"
+       y="114.54997"
+       id="text29702"><tspan
+         sodipodi:role="line"
+         id="tspan29700"
+         style="fill:#000000;stroke:#000000;stroke-width:0.0729793"
+         x="60.131084"
+         y="114.54997">USB</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.281001"
+       d="M 48.263333,125.83581 H 78.472085"
+       id="path28724-3" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.91917px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0729793"
+       x="60.025925"
+       y="125.32626"
+       id="text29702-2"><tspan
+         sodipodi:role="line"
+         id="tspan29700-1"
+         style="fill:#000000;stroke:#000000;stroke-width:0.0729793"
+         x="60.025925"
+         y="125.32626">USB</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.281001"
+       d="M 48.225139,170.03719 H 78.433891"
+       id="path28724-3-6" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.91917px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0729793"
+       x="59.987728"
+       y="169.52763"
+       id="text29702-2-9"><tspan
+         sodipodi:role="line"
+         id="tspan29700-1-9"
+         style="fill:#000000;stroke:#000000;stroke-width:0.0729793"
+         x="59.987728"
+         y="169.52763">USB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.84321px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14608"
+       x="79.715157"
+       y="180.34132"
+       id="text8232-3"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.14608"
+         x="79.715157"
+         y="180.34132"
+         id="tspan9170-6">Portable Speaker</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.131973"
+       id="rect9512-9"
+       width="51.411324"
+       height="9.6679964"
+       x="78.60099"
+       y="175.23886" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.281001"
+       d="M 48.2172,178.91858 H 78.425952"
+       id="path28724-3-6-9" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.91917px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0729793"
+       x="59.97979"
+       y="178.40903"
+       id="text29702-2-9-5"><tspan
+         sodipodi:role="line"
+         id="tspan29700-1-9-9"
+         style="fill:#000000;stroke:#000000;stroke-width:0.0729793"
+         x="59.97979"
+         y="178.40903">USB</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.281001"
+       d="M 48.594061,139.85873 H 78.802813"
+       id="path28724-5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.91917px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0729793"
+       x="60.356655"
+       y="139.34917"
+       id="text29702-0"><tspan
+         sodipodi:role="line"
+         id="tspan29700-3"
+         style="fill:#000000;stroke:#000000;stroke-width:0.0729793"
+         x="60.356655"
+         y="139.34917">PWM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="30.682543"
+       y="246.76996"
+       id="text34152"><tspan
+         sodipodi:role="line"
+         id="tspan34150"
+         style="stroke-width:0.264583"
+         x="30.682543"
+         y="246.76996">5V Wall Supply</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="30.682543"
+         y="259.99908"
+         id="tspan36376" /></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.259134"
+       id="rect36480"
+       width="84.773033"
+       height="13.679341"
+       x="28.239452"
+       y="236.46915" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.281001"
+       d="M 70.719515,236.46914 V 211.59728 H 29.560009 v -12.15173"
+       id="path36620" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.281001"
+       d="M 70.719515,211.59728 V 182.97272 H 78.60099"
+       id="path36622" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.30569px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0826424"
+       x="25.403051"
+       y="198.15077"
+       id="text37868"><tspan
+         sodipodi:role="line"
+         id="tspan37866"
+         style="stroke-width:0.0826424"
+         x="25.403051"
+         y="198.15077">5v in</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.30569px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0826424"
+       x="79.821472"
+       y="183.8134"
+       id="text37868-7"><tspan
+         sodipodi:role="line"
+         id="tspan37866-5"
+         style="stroke-width:0.0826424"
+         x="79.821472"
+         y="183.8134">5v in</tspan></text>
+  </g>
+</svg>
