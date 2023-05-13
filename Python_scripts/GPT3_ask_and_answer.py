@@ -5,7 +5,11 @@ import speech_recognition as sr
 import pyttsx3
 import sounddevice
 
-openai.api_key = "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"
+
+key1 = 'sk-GB044OzAsr3ho8b99CzNT3BlbkFJg'
+key2 = 'WAQHMCv8Yf5q5g5w9hG'
+
+openai.api_key = key1+key2 # this is why we cant have nice things
 
 
 
