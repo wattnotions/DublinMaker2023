@@ -5,6 +5,8 @@ import speech_recognition as sr
 import pyttsx3
 from dotenv import load_dotenv
 from mouth_controller import PWMController
+from eyes_controller import EyesController
+from cam import WebcamStream
 
 
 
@@ -74,5 +76,19 @@ if __name__ == "__main__":
     pwm_controller = PWMController()
     pwm_controller.start()
 
+    #eyes = EyesController()
+    #eyes.animate_eyes()
+
+    eyes_controller = EyesController()
+
+    # Create an instance of WebcamStream with the EyesController instance
+    webcam_stream = WebcamStream(eyes_controller=eyes_controller, frame_rate=5)  # Adjust frame rate if needed
+
+    # Start the threads
+    eyes_controller.eyes_thread_instance.start()
+    webcam_stream.start()
+
     VoiceAssistant.list_microphones()
     voice_assistant.listen_and_respond()
+
+    
