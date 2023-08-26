@@ -4,7 +4,7 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 
 for voice in voices:
-    if b"english" in voice.languages[0].lower():
+    if "en" in voice.id.lower():
         print("Voice name:", voice.name)
         print("Voice ID:", voice.id)
         

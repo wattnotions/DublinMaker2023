@@ -4,12 +4,12 @@ import json
 import speech_recognition as sr
 import pyttsx3
 import sounddevice
+from dotenv import load_dotenv
 
+load_dotenv("api_key.env")  # Load environment variables from .env file
 
-key1 = 'sk-GB044OzAsr3ho8b99CzNT3BlbkFJg'
-key2 = 'WAQHMCv8Yf5q5g5w9hG'
+openai.api_key = os.environ.get("API_KEY")
 
-openai.api_key = key1+key2 # this is why we cant have nice things
 
 
 
