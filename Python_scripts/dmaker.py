@@ -58,6 +58,8 @@ class VoiceAssistant:
                 
                 try:
                     text_input = self.recognizer.recognize_google(audio).lower()
+                    #text_input = self.recognizer.recognize_whisper_api(audio, api_key=api_key).lower()
+                    print(text_input)
                     return text_input
                 except sr.UnknownValueError:
                     return None  # No speech detected
