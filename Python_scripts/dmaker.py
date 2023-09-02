@@ -8,6 +8,7 @@ from mouth_controller import PWMController
 from eyes_controller import EyesController
 from cam import WebcamStream
 import threading
+import time
 
 
 
@@ -27,7 +28,7 @@ class GPT3Assistant:
             max_tokens=200
         )
         answer = response["choices"][0]["message"]["content"]
-        return answer
+        return response
 
 
 
@@ -37,7 +38,7 @@ class VoiceAssistant:
         self.device_index = device_index
         self.recognizer = sr.Recognizer()
         self.engine = pyttsx3.init()
-        self.engine.setProperty('voice', "en-scottish")
+        self.engine.setProperty('voice', "english-rp")
         self.engine.setProperty('rate', 130)
         self.is_listening = True  # <-- This flag will be used to stop the listening loop
         
@@ -51,18 +52,24 @@ class VoiceAssistant:
         try:
             with sr.Microphone(device_index=self.device_index) as source:
                 print("opened mic")
-                self.recognizer.adjust_for_ambient_noise(source, duration=0.2)
+                self.recognizer.adjust_for_ambient_noise(source, duration=1)
                 self.speak("I'm listening")
                 # Listen for audio input
-                audio = self.recognizer.listen(source, timeout=5)  # Adjust the timeout value
+
+                start_time = time.time()  # Record the starting time
+                max_listen_duration = 5  # Set the maximum duration in seconds
                 
-                try:
-                    text_input = self.recognizer.recognize_google(audio).lower()
-                    #text_input = self.recognizer.recognize_whisper_api(audio, api_key=api_key).lower()
-                    print(text_input)
-                    return text_input
-                except sr.UnknownValueError:
-                    return None  # No speech detected
+                while time.time() - start_time <= max_listen_duration:
+                    audio = self.recognizer.listen(source, timeout=1)  # Listen for a short period    
+                
+                
+                    try:
+                        text_input = self.recognizer.recognize_google(audio).lower()
+                        #text_input = self.recognizer.recognize_whisper_api(audio, api_key=api_key).lower()
+                        print(text_input)
+                        return text_input
+                    except sr.UnknownValueError:
+                        return None  # No speech detected
                 
         except sr.RequestError as e:
             print(f"Could not request results; {e}")
@@ -119,16 +126,29 @@ if __name__ == "__main__":
     question = pre_prompt
     while True:
         print("text sent to openai = "+question)
-        gpt_reply=gpt3_assistant.ask_gpt3(conversation, question)
+        response=gpt3_assistant.ask_gpt3(conversation, question)
+        gpt_reply = response["choices"][0]["message"]["content"]
+
+
         conversation.append({"role": "user", "content": question})
         conversation.append({"role": "assistant", "content": gpt_reply})
 
-
+        total_tokens_used = response['usage']['total_tokens']
+        print(total_tokens_used)
+        # Check if the total tokens used exceed the max token context (4k tokens)
+        if total_tokens_used > 3500:
+            voice_assistant.speak("Total tokens used exceed max token context. Clearing conversation and starting again.")
+            print("Total tokens used exceed max token context. Clearing conversation and starting again.")
+            conversation = []
+            question = pre_prompt
+            continue
         
         
         
         print("speak response")
         print(len(conversation))
+
+       # print(gpt_reply)
         voice_assistant.speak(gpt_reply)
 
         #wait for a few seconds to give person a chance to speak
@@ -136,8 +156,10 @@ if __name__ == "__main__":
         spoken_words = voice_assistant.listen()
     
         if spoken_words:
+            voice_assistant.speak("I heard you")
             question = spoken_words
             print(question)
         else:
-            question =  "Nobody responded. Give me another comment, try to not say the same thing over and over again"
+            voice_assistant.speak("I missed that")
+            question =  "Nobody responded, just keep the conversation going"
             print("no voice detected")
